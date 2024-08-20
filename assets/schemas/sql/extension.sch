@@ -6,7 +6,7 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE EXTENSION ] {name} $br
+[CREATE EXTENSION IF NOT EXISTS ] {name} $br
 
 %if {schema} %then
 	[WITH SCHEMA ] {schema}

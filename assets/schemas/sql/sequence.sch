@@ -6,7 +6,7 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE SEQUENCE ] {name} $br
+[CREATE SEQUENCE IF NOT EXISTS ] {name} $br
 
 %if {increment} %then
 	$tb [INCREMENT BY ] {increment} $br

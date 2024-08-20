@@ -6,7 +6,7 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE USER MAPPING FOR ]
+[CREATE USER MAPPING IF NOT EXISTS FOR ]
 
 %if {owner} %then {owner} %else PUBLIC %end $br
 

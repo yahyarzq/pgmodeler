@@ -20,7 +20,13 @@
 	%end
 %end
 
-VIEW $sp {name}
+VIEW $sp
+
+%if {materialized} %then
+	[IF NOT EXISTS ]
+%end
+
+{name}
 
 %if {columns} %then
 	[ (] {columns} [)] 

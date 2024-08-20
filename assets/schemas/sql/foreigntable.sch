@@ -6,7 +6,7 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE FOREIGN TABLE ] {name}
+[CREATE FOREIGN TABLE IF NOT EXISTS ] {name}
 
 %if {partitioned-table} %then
 	$br [PARTITION OF ] {partitioned-table} $sp

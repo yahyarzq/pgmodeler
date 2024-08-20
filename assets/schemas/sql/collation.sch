@@ -8,7 +8,7 @@
 
 %set {attr-sep} [,] $br
 
-[CREATE COLLATION ] {name}
+[CREATE COLLATION IF NOT EXISTS ] {name}
 
 %if {collation} %then
 	[ FROM ] {collation}

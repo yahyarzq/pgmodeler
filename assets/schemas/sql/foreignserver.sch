@@ -6,7 +6,7 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE SERVER ] {name}
+[CREATE SERVER IF NOT EXISTS ] {name}
 
 %if {type} %then
 	[ TYPE ] '{type}'

@@ -12,7 +12,7 @@
 	[ UNLOGGED]
 %end
 
-[ TABLE ] {name}
+[ TABLE IF NOT EXISTS ] {name}
 
 %if {partitioned-table} %then
 	$br [PARTITION OF ] {partitioned-table} $sp

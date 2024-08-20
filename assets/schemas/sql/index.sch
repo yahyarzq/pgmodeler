@@ -12,7 +12,7 @@
 	[ CONCURRENTLY ]
 %end
 
-{name} [ ON ] {table}
+[IF NOT EXISTS ] {name} [ ON ] {table}
 
 %if {index-type} %then
 	$br [USING ] {index-type}

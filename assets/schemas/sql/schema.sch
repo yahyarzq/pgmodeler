@@ -6,6 +6,6 @@
 @include "objlabel"
 @include "prependedsql"
 
-[CREATE SCHEMA ] {name};
+[CREATE SCHEMA IF NOT EXISTS ] {name};
 
 @include "footer"

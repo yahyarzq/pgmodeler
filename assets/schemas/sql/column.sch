@@ -10,7 +10,7 @@
 	[-- object: ] {name} [ | type: ] {sql-object} [ --] $br
 
 	%if {table} %then
-		[ALTER TABLE ] {table} [ ADD COLUMN ]
+		[ALTER TABLE ] {table} [ ADD COLUMN IF NOT EXISTS ]
 	%end
 %end
 
